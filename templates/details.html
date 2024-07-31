@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='details.css') }}">
+</head>
+<body>
+    <center>
+        <h1><i>PERSONAL INFORMATION</i></h1>
+        <form id="myform" action="detail" method="POST">
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">AGE:</label>
+                    <input type="number" id="age" name="age" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label>GENDER:</label>
+                    <input type="radio" name="gen" value="male" required> Male
+                    <input type="radio" name="gen" value="female"> Female
+                </div>
+                <div class="form-group">
+                    <label for="addr">ADDRESS:</label>
+                    <textarea id="addr" name="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="mail">EMAIL-ID:</label>
+                    <input type="email" id="mail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mb">MOBILE NO:</label>
+                    <input type="tel" id="mb" name="mobile" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                <button type="button" onclick="window.history.back()">Back</button>
+                <button type="submit">Book</button>
+            </div>
+        </form>
+    </center>
+</body>
+</html>

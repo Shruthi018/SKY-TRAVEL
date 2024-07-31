@@ -1,0 +1,56 @@
+body{
+    box-sizing : border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-size:135%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header p{
+    position: relative;
+    display: inline;
+    padding-left:60px;
+    left:20%;
+
+}
+header{
+    color: beige;
+    background-color: cadetblue; 
+}
+fieldset { 
+    display: inline;
+    width:15%;
+    
+}
+select ,#input{
+    width:100%;
+    
+    
+}
+div{
+   border:1px solid red;
+   position: relative;
+   top:70px;
+   width: 70%;  
+   padding-bottom: 30px; 
+}
+button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 30%;
+    margin: 10px 1%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+a{
+ text-decoration: none;
+ color: beige;
+}

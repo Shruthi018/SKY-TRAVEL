@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='common.css') }}">
+    </head>
+    <body style="background-image: url('../static/bus1.gif');"><center><br/>
+      <header>
+      <p style="font-size:XX-large; left: -25%;">SKY TRAVEL</p>
+      <p><a href='{{ url_for('bus') }}'>bus 🚌</p></a>
+      <p><a href='{{ url_for('plane') }}'>flight &#9992;</p></a>
+      <p> <a href='{{ url_for('train') }}'>trains &#128651;</p></a>
+      <p><a href='{{ url_for('login') }}'>login</p></a>
+    </header> <form action="bus" method="POST" autocomplete="off">
+    <h2><i>Bus Ticket Booking</i></h2>
+    <div id="bus">
+        <br/>
+      <fieldset >
+        <legend >From</legend> 
+        <select name="from">
+          <option>delhi</option>
+          <option>mumbai</option>
+          <option>chennai</option>
+          <option>kochi</option>
+          <option>mumbai</option>
+          <option>hyderbad</option>
+          <option>kolkata</option>
+         </select>
+        </fieldset>
+        <fieldset >
+          <legend>To</legend> 
+          <select name="to">
+            <option>delhi</option>
+            <option>mumbai</option>
+            <option>chennai</option>
+            <option>kochi</option>
+            <option>mumbai</option>
+            <option>hyderbad</option>
+            <option>kolkata</option>
+          </select>
+          </fieldset>
+          <fieldset >
+            <legend>Date</legend>
+            <input type="date" name="date">
+          </fieldset>
+          <fieldset >
+            <legend>Traveller</legend>
+           <select name ="traveller">
+            <option>adult</option>
+            <option>chlidren</option>
+            <option>infant</option>
+           </select>
+          </fieldset><br/><br/><br/>
+           <fieldset >
+            <legend>Time</legend>
+            <input type="time" name="time">
+          </fieldset>
+          <fieldset >
+            <legend>Seat no</legend>
+            <input type="number" max="60" min="1"name="seat">
+          </fieldset>
+        <br/><br/><br/>
+          
+        <button type="submit" onclick="window.location.href='{{ url_for('detail') }}';">Traveller details & book</button>
+      </form>
+          </div>
+  </center>
+    </body>
+</html>

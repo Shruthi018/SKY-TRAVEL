@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tick.css') }}">
+</head>
+<body>
+    <div id="head">
+        <h1>BOARDING PASS</h1>
+        <div id="rhead">
+            <h2>BOARDING PASS</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-content">
+            <div class="left">
+            <p>NAME: <span>{{ details_data.name }}</span></p>
+            <p>FROM: <span>{{ booking_data.from }}</span></p>
+            <p>TO: <span>{{ booking_data.to }}</span></p>
+        </div>
+            <div class="right">
+                <p>GENDER: <span>{{ details_data.gen }}</span></p>
+                <p>TRAVELLER: <span>{{ booking_data.traveller }}</span></p>
+            </div>
+            <div id="content">
+                <p>DATE: <span>{{ booking_data.date }}</span></p>
+                <p>SEAT NO: <span>{{ booking_data.seat }}</span></p>
+                <p>TIME: <span>{{ booking_data.time }}</span></p>
+            </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="right-content">
+            <p> NAME: <span>{{ details_data.name }}</span></p><br>
+            <p>FROM: <span>{{ booking_data.from }}</span></p><br>
+            <p>TO: <span>{{ booking_data.to }}</span></p><br>
+            <p>TRAVELLER: <span>{{ booking_data.traveller }}</span></p><br>
+            <div id="content1">
+                <p>GENDER: <span>{{ details_data.gen }}</span></p>
+                <p>DATE: <span>{{ booking_data.date }}</span></p>
+            </div>
+            <div id="content2">
+                <p>SEAT NO: <span>{{ booking_data.seat }}</span></p>
+                <p>TIME: <span>{{ booking_data.time }}</span></p>
+            </div>
+        </div>
+    </div>
+    <center>
+        <button type="button" onclick="window.history.back()">Back</button>
+        <button type="submit" onclick="window.print()">Print</button>
+    </center>
+    <div id="foot"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='common.css') }}">
+    </head>
+    <body style="background-image: url('../static/log3.gif');"><center><br/>
+      <header>
+      <p style="font-size:XX-large; left: -25%;">SKY TRAVEL</p>
+      <p><a href='{{ url_for('bus') }}'>bus 🚌</p></a>
+      <p><a href='{{ url_for('plane') }}'>flight &#9992;</p></a>
+      <p> <a href='{{ url_for('train') }}'>trains &#128651;</p></a>
+      <p><a href='{{ url_for('login') }}'>login</p></a>
+    </header><br>
+    <form action="login" method="POST">
+    <fieldset style="width: 50%;">
+      <h2><i>LOG-IN</i></h2>
+          Name<input type="text" name="username">  <br/><br/>
+          Password<input type="password" name="password"> <br/><br/>
+          <button type="submit">login</button><br/><hr/> 
+          <h2><i>SIGN-IN</i></h2>
+          Name<input type="text" >  <br/><br/>
+          email-id<input type="email"><br/><br/>
+          Password<input type="password"> <br/><br/>
+          <button type="submit">create an account</button>
+    </fieldset>
+  </form>
+  </center>
+    </body>
+</html>
