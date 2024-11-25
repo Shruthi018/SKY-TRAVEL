@@ -39,5 +39,5 @@
 2. Log in with the provided credentials 
 3. Navigate through the booking interface to book tickets, view details, and print your tickets.
    
-https://github.com/user-attachments/assets/7c2f7b96-3e50-4f8d-ac23-88ef8ac48efe
+https://github.com/user-attachments/assets/0e31eb99-b7f5-42d6-aa25-46a0e103d0bb
 
